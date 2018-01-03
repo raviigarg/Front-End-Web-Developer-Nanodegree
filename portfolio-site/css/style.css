@@ -1,0 +1,62 @@
+/*Font for body element*/
+body {
+	font-family: 'Lato', sans-serif;
+	color: #2d3c49;
+}
+
+/*Style for logo*/
+.title-logo {
+	margin: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+/*Style for title*/
+.title-gap {
+	padding: 10px;
+}
+
+.title-super {
+	font-size: 40px;
+}
+
+/*Style for header break*/
+.thick {
+	height: 3px;
+	border: none;
+	background-color: #7d97ad;
+}
+
+/*Style for main image*/
+.main-image {
+	padding: 10px;
+}
+
+/*Styles for featured work*/
+.featured-work {
+	color: #7d97ad;
+	padding: 10px 0 0 10px;
+}
+
+.featured-image {
+	width: 325px;
+	height: 175px;
+}
+
+.featured-gap {
+	padding: 10px;
+}
+
+/*media queries to make website responsive*/
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+	.col-md-4{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.featured-image {
+		width: 275px;
+		height: 175px;
+	}
+}
