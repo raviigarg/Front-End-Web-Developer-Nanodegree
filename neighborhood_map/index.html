@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neighborhood Map</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<!-- sidebar, hidden by default -->
+	<nav id="side-bar" class="side-nav">
+		<span onclick="closeNav()"><p>&#10008</p></span>
+		<div class="side-nav-content">
+			<h4>Tourist places in Jaipur</h4>
+			<input id="filter-places" type="text" data-bind="value: venueTitle, valueUpdate: 'afterkeydown', event: { keyup: markersUpdate}" placeholder="Enter text to filter locations">
+			<!-- places unorder list, output depened on input text field -->
+			<ul class="place-list" data-bind="foreach: markers">
+				<!--ko if: visiblity -->
+					<li data-bind="text: title, click: $parent.populateWindow"></li>
+				<!-- /ko -->
+			</ul>
+		</div>
+	</nav>
+	
+	<div id="main">
+		<div class="header">
+			<div class="row">
+				<span onclick="openNav()"><i class="material-icons">menu</i></span>
+				<p>The Pink City : Jaipur</p>
+			</div>
+		</div>
+		<div id="map"></div>
+	</div>
+
+	<!-- knockout javascript cdn link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- asynchronous call to Google map API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyBq25kZZvWs91uIC84TAcyMr8j89-8J1IU&v=3&callback=initMap" onerror="errorMap()">
+	</script>
+</body>
+</html>
