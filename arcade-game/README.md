@@ -1,4 +1,4 @@
-# Memory Game Project:
+# Arcade Game:
 * This is the sixth project of Front-End Web Developer Nanodegree.
 *  This project is to practice object-oriented programming, an important programming paradigm that influences application architecture and provides performance optimization.
 
