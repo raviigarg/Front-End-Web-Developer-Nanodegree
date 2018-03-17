@@ -12,4 +12,4 @@ This repository contains the projects of Front-End Web Developer Nanodegree (Uda
 8. [Neighborhood Map](https://github.com/raviigarg/Front-End-Web-Developer-Nanodegree/tree/master/neighborhood-map)
 
 ### Certificate of Completion:
-![Certificate](https://github.com/raviigarg/Front-End-Web-Developer-Nanodegree/blob/master/nd001-image.png)
+![Certificate](https://github.com/raviigarg/Front-End-Web-Developer-Nanodegree/blob/master/front-end-updated.png)
